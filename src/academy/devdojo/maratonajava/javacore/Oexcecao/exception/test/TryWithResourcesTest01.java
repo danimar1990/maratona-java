@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Oexcecao.exception.test;
 
-import academy.devdojo.maratonajava.javacore.Oexcecao.model.Leitor1;
-import academy.devdojo.maratonajava.javacore.Oexcecao.model.Leitor2;
+import academy.devdojo.maratonajava.javacore.Oexcecao.exception.model.Leitor1;
+import academy.devdojo.maratonajava.javacore.Oexcecao.exception.model.Leitor2;
 
 import java.io.*;
 

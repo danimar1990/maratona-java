@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Oexcecao.model;
+package academy.devdojo.maratonajava.javacore.Oexcecao.exception.model;
 
 import java.io.Closeable;
 import java.io.IOException;
