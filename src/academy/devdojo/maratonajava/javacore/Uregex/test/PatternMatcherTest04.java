@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Uregex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PatternMatcherTest03 {
+public class PatternMatcherTest04 {
     public static void main(String[] args) {
         // \d = Todos os dígitos
         // \D = Tudo o que não for dígito
@@ -12,9 +12,15 @@ public class PatternMatcherTest03 {
         // \w = a-ZA-Z, dígitos e _
         // \W = Tudo o que não for incluso no \w
         // [] = Range
-
-        String regex = "[a-zA-C]";
-        String texto = "cafePELE";
+        // ? zero ou uma ocorrência
+        // * zero ou mais
+        // + uma ou mais
+        // {n, m} de n até m
+        // () agrupamento
+        // | ex: o(v|c)o = ovo ou oco
+        // $ fim da linha
+        String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
+        String texto = "12 0x 0X 0xFFABC 0x10G 0x1";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
         System.out.println("Texto....: "+texto);
@@ -24,9 +30,5 @@ public class PatternMatcherTest03 {
         while (matcher.find()) {
             System.out.print(matcher.start()+" "+matcher.group()+"\n");
         }
-        //número hexadecimal
-        int numeroHexadecimal = 0x59F89A;
-        //o impresso é o número decimal
-        System.out.println(numeroHexadecimal);
     }
 }
