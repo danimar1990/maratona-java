@@ -23,6 +23,7 @@ public class Smartphone {
         return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
     }
 
+
     //se x.equals(y) == true, y.hashCode() == x.hashCode(x)
     //y.hashCode() == x.hashCode não necessariamente o equals de y.equals(x) tem que ser true
     //x.equals(y) == false
